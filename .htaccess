@@ -1,0 +1,11 @@
+#RemoveHandler .html
+#AddType text/html .html
+ErrorDocument 404 /err.php
+<FilesMatch ".(html)$">
+ Order Allow,Deny
+ Deny from all
+ </FilesMatch>
+
+DirectoryIndex index.php
+
+
